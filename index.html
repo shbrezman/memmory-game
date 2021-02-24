@@ -14,13 +14,34 @@
     <style>
         .center {
             margin: auto;
-            width: 535px;
-            border: 3px solid green;
-            padding: 10px;
-}
+            width: 800px;
+            
+                }
+        .meta-game{
+            position: absolute;
+            background-color: rgb(233, 210, 255);
+            width: 250px;
+            height: 300px;
+            margin: 80px;
+        }        
     </style>
 </head>
 <body>
+    <div class="meta-game container">
+        <button class="btn btn-info m-3" onclick="restart()"><h2><i>Start New Game</i></h1></button>
+        <h3 id="clicks">clicks:</h3>
+        <h3 id="score">Score:</h3>
+        <div style="margin-left: 30px">
+            <div style="border: 1px rgb(124, 122, 122) solid; width: 80px; height: 80px; float: left;" >
+                <h1 id="minutes" style=" margin: 15px"></h1>
+                
+            </div>
+            <div style="border: 1px rgb(124, 122, 122) solid; width: 80px; height: 80px; float: left" >
+                <h1 id="seconds" style=" margin: 15px"></h1>
+                
+            </div>
+        </div>
+    </div>
         
     <div class="center mt-3" id="game-body">
         <!-- <img class="m-2" src="blank.png" alt=""> -->
